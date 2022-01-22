@@ -3,10 +3,16 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia nome
-		escreva("Olá, Qual é o seu nome?\n")
-		leia(nome)
-		escreva("Tudo bem "+nome+"? É um grande prazer te conhecer")
+		real nota1, nota2, media
+		escreva("Digite a sua primeira nota: ")
+		leia(nota1)
+		escreva("Digite a sua segunda nota: ")
+		leia(nota2)
+		media = (nota1 + nota2) / 2
+		se(media >= 7){
+			escreva("MEUS PARABENS! ")
+		}
+		escreva("A sua média final foi de ",media)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -14,9 +20,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 161; 
+ * @POSICAO-CURSOR = 251; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {nome, 6, 9, 4};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
