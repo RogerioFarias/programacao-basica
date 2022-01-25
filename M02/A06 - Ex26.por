@@ -1,5 +1,5 @@
 programa
-{
+{	//Rever esse exercicio para melhorar o codigo
 	//inclua biblioteca Tipos --> t
 	funcao inicio()
 	{
@@ -70,7 +70,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 14; 
+ * @POSICAO-CURSOR = 56; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
