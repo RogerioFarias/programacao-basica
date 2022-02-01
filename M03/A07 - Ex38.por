@@ -4,8 +4,9 @@ programa
 	funcao inicio()
 	{
 		inteiro cont=1, idade=0, menorf=0, maiorf=0, menorm=0,maiorm=0
-		cadeia sexo="",nome = "", mj="",ma="",hj="",ha=""
-		enquanto(cont <= 1){
+		
+		caracter sexo,nome=' ', mj=' ',ma=' ',hj=' ',ha=' '
+		enquanto(cont <= 2){
 			escreva("------------\n")
 			escreva(cont,"° PESSOA\n")
 			escreva("------------\n")
@@ -20,13 +21,13 @@ programa
 				maiorf = idade
 				maiorm = idade
 				menorm = idade
-			}se(menorf > idade e sexo == "F"){
+			}se(menorf <= idade ou sexo == 'F'){
 				menorf = idade
 				mj = nome
-			}senao se(maiorf < idade e sexo == "F"){
+			}senao se(maiorf <= idade ou sexo == 'F'){
 				maiorf = idade
 				ma = nome
-			}senao se(menorm > idade e sexo == "M"){
+			}senao se(menorm >= idade ou sexo == 'M'){
 				menorm = idade
 				hj = nome
 			}senao{
@@ -46,9 +47,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 980; 
+ * @POSICAO-CURSOR = 650; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {idade, 6, 18, 5}-{menorf, 6, 27, 6}-{maiorf, 6, 37, 6}-{menorm, 6, 47, 6}-{maiorm, 6, 56, 6}-{sexo, 8, 11, 4}-{mj, 8, 26, 2}-{ma, 8, 33, 2}-{hj, 8, 40, 2}-{ha, 8, 47, 2};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
