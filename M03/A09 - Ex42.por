@@ -5,7 +5,7 @@ programa
 	funcao inicio()
 	{
 		inteiro cont=0, toth=0, totm=0, maior=0, totm2=0
-		real sal, somah=0,somam=0
+		real sal, somah=0, somam=0
 		cadeia nome, sexo, alta
 		caracter verifica
 		enquanto(verdadeiro){
@@ -50,7 +50,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 950; 
+ * @POSICAO-CURSOR = 140; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {totm2, 7, 43, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
