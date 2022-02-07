@@ -4,10 +4,11 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro num
-
-		para(num=1;num<=10;num++){
-			escreva("7 x ",num," = ",num*7,"\n")
+		inteiro num, cont
+		escreva("NUMERO = ")
+		leia(num)
+		para(cont=1;cont<=10;cont++){
+			escreva(num," x ",cont," = ",num*cont,"\n")
 			Util.aguarde(300)
 		}
 	}
@@ -17,7 +18,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 143; 
+ * @POSICAO-CURSOR = 188; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
