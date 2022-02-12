@@ -9,10 +9,10 @@ programa
 		escreva("Marcar os múltiplos de ")
 		leia(dec)
 		enquanto(num >= cont){
-			se(num % dec ==0){
-				escreva("[",num,"]")
+			se(num % dec == 0){
+				escreva("[",num,"] - ")
 			}senao{
-				escreva(" - ",num," - ")
+				escreva(num," - ")
 			}
 			num--
 		}
@@ -24,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 332; 
+ * @POSICAO-CURSOR = 218; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Util --> u
+	inclua biblioteca Util --> u
 	funcao inicio()
 	{
 		inteiro num, cont=1

@@ -9,9 +9,9 @@ programa
 			escreva("Digite o ",cont,"° valor: ")
 			leia(num)
 			se(num % 2 == 0){
-				spar+=num
+				spar += num
 			}senao{
-				simpa+=num
+				simpa += num
 			}
 			cont++
 		}
@@ -24,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 0; 
+ * @POSICAO-CURSOR = 210; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

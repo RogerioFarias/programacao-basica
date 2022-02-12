@@ -4,7 +4,7 @@ programa
 	inclua biblioteca Matematica --> m
 	funcao inicio()
 	{
-		inteiro num=0, spar=0,totpar=0, simpa=0, totimpa=0, cont=1
+		inteiro num = 0, spar = 0,totpar = 0, simpa = 0, totimpa = 0, cont = 1
 		
 		enquanto(cont <= 5){
 			
@@ -12,10 +12,10 @@ programa
 			leia(num)
 			
 			se(num % 2 == 0){
-				spar+=num
+				spar += num
 				totpar++
 			}senao{
-				simpa+=num
+				simpa += num
 				totimpa++
 			}
 			cont++
@@ -29,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 466; 
+ * @POSICAO-CURSOR = 289; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
