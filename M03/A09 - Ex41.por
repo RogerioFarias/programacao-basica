@@ -1,17 +1,18 @@
 programa
 {
-	inclua biblioteca Matematica --> m
+	inclua biblioteca Matematica --> m
+	inclua biblioteca Texto --> txt
 	funcao inicio()
 	{
 		inteiro maior=0, menor=0, cont=0, idade
-		real soma=0
+		real soma=0.0
 		cadeia nome, aux1 = " ", aux2= " "
 		enquanto(verdadeiro){
 			escreva("---------- NOVO AMIGO ----------\n")
 			escreva("OBS: Digite ACABOU no nome para parar\n")
 			escreva("Nome: ")
 			leia(nome)
-			se(nome == "ACABOU" ou nome == "acabou"){
+			se(txt.caixa_alta(nome) == "ACABOU"){
 				pare
 			}
 			escreva("Idade: ")
@@ -25,7 +26,7 @@ programa
 			}senao se(maior < idade){
 				maior = idade
 				aux1 = nome
-			}senao {
+			}senao se(menor > idade){
 				menor = idade
 				aux2 = nome
 			}
@@ -45,7 +46,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 657; 
+ * @POSICAO-CURSOR = 669; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
