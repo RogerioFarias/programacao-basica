@@ -3,12 +3,13 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro cont=1, idade=0, menorf=0, maiorf=0, menorm=0,maiorm=0
-		
-		caracter sexo,nome=' ', mj=' ',ma=' ',hj=' ',ha=' '
-		enquanto(cont <= 2){
+		inteiro c=1, idade, menorF=0, maiorF=0, menorM=0,maiorM=0,
+		totM = 0, totF = 0
+		cadeia nome, novoM = "", velhoM = "", novoF = "", velhoF = ""
+		caracter sexo
+		enquanto(c <= 2){
 			escreva("------------\n")
-			escreva(cont,"° PESSOA\n")
+			escreva(c,"° PESSOA\n")
 			escreva("------------\n")
 			escreva("NOME: ")
 			leia(nome)
@@ -16,30 +17,48 @@ programa
 			leia(sexo)
 			escreva("IDADE: ")
 			leia(idade)
-			se(cont == 1){
-				menorf = idade
-				maiorf = idade
-				maiorm = idade
-				menorm = idade
-			}se(menorf <= idade ou sexo == 'F'){
-				menorf = idade
-				mj = nome
-			}senao se(maiorf <= idade ou sexo == 'F'){
-				maiorf = idade
-				ma = nome
-			}senao se(menorm >= idade ou sexo == 'M'){
-				menorm = idade
-				hj = nome
-			}senao{
-				maiorm = idade
-				ha = nome
+			se (sexo == 'M' ou sexo == 'm'){
+				totM++
+				se (totM == 1){
+					maiorM = idade
+					velhoM = nome
+					menorM = idade
+					novoM = nome
+				} senao {
+				se (idade > maiorM){
+					maiorM = idade
+					velhoM = nome	
+				}
+				se (idade < menorM){
+					menorM = idade
+					novoM = nome
+				}
+				}
+			} senao se (sexo == 'F' ou sexo == 'f'){
+				totF++
+				se (totF == 1){
+					maiorF = idade
+					velhoF = nome
+					menorF = idade
+					novoF = nome
+				} senao{
+					se(idade > maiorF){
+						maiorF = idade
+						velhoF = nome
+					}
+					se (idade < menorF){
+						menorF = idade
+						novoF = nome
+					}
+				}
 			}
-			cont++			
+					
+			c++			
 		}
-		escreva("A mulher mais jovem é a ",mj," que tem ",menorf," anos\n")
-		escreva("A mulher mais velha é a ",ma," que tem ",maiorf," anos\n")
-		escreva("O homem mais jovem é a ",hj," que tem ",menorm," anos\n")
-		escreva("O homem mais velho é a ",ha," que tem ",maiorm," anos\n")
+		escreva("A mulher mais jovem é a ",novoF," que tem ",menorF," anos\n")
+		escreva("A mulher mais velha é a ",velhoF," que tem ",maiorF," anos\n")
+		escreva("O homem mais jovem é a ",novoM," que tem ",menorM," anos\n")
+		escreva("O homem mais velho é a ",velhoM," que tem ",maiorM," anos\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -47,9 +66,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 650; 
+ * @POSICAO-CURSOR = 406; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {idade, 6, 18, 5}-{menorf, 6, 27, 6}-{maiorf, 6, 37, 6}-{menorm, 6, 47, 6}-{maiorm, 6, 56, 6}-{sexo, 8, 11, 4}-{mj, 8, 26, 2}-{ma, 8, 33, 2}-{hj, 8, 40, 2}-{ha, 8, 47, 2};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
