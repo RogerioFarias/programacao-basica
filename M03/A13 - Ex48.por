@@ -4,16 +4,24 @@ programa
 	funcao inicio()
 	{
 	
-		inteiro cont, div=0, num
+		inteiro c, div=0, num
 
 		escreva("Digite o numero: ")
 		leia(num)
 
-		para(cont=1;cont>=num;cont++){
-			se(num / 1 == num e num / num == num){
+		para(c = 1; c <= num; c++){
+			se(num % c == 0){
+				escreva("[",c,"] ")
 				div++
-				escreva("[",num,"] ")
+			}senao{
+				escreva(c, " ")
 			}
+		}
+		escreva("\nO numero ",num," foi divisivel ",div," vezes.")
+		se(div <= 2){
+			escreva("\nEntao o numero ",num," È PRIMO")
+		}senao{
+			escreva("\nLogo, o numero ",num," NÂO É PRIMO")
 		}
 	}
 }
@@ -22,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 184; 
+ * @POSICAO-CURSOR = 413; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

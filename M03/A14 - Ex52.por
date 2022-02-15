@@ -4,27 +4,25 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro ini, fim, passo, cont
-		escreva("INICIO = ")
-		leia(ini)
-		escreva("FINAL = ")
-		leia(fim)
-		escreva("PASSO = ")
-		leia(passo)
-		se(passo <= 0) passo*==1
-		se(ini < fim){
-			para(cont=ini;cont<=fim;cont+=passo){
-				escreva(cont,".. ")
-				Util.aguarde(300)
+		inteiro and
+		escreva("Quantos andares a piranmide vai ter? ")
+		leia(and)
+
+		inteiro quantEst = (and * 2) - 1
+		inteiro quantEsp = 0
+
+		para(inteiro cAnd = 1; cAnd <= and; cAnd++){
+			para( inteiro cEsp = 0; cEsp <= quantEsp; cEsp++){
+				escreva("-")
 			}
-		}senao{
-			para(cont=ini;cont>=fim;cont-=passo){
-				escreva(cont,".. ")
-				Util.aguarde(300)
+			quantEsp++
+			para(inteiro cEst = 1; cEst <= quantEst; cEst++){
+				escreva("*")
+				Util.aguarde(50)
 			}
+			escreva("\n")
+			quantEst -= 2
 		}
-		
-		escreva("ACABOU!!")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -32,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 220; 
+ * @POSICAO-CURSOR = 270; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Texto --> t
+	inclua biblioteca Texto --> t
 	funcao inicio()
 	{
 		inteiro i, j, tri,soma=0
@@ -22,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 114; 
+ * @POSICAO-CURSOR = 266; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
